@@ -624,6 +624,18 @@ a.customers-link:focus {
   outline: none;
 }
 
+.subscribe-mail-label {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .input-subscribe {
   height: 40px;
@@ -738,6 +750,7 @@ a.customers-link:focus {
 .input-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 
@@ -808,9 +821,9 @@ textarea:focus {
 
 textarea {
   resize: none;
-  margin-bottom: 16px;
   padding: 8px 16px;
   transition: outline-color var(--animation-hover-transition);
+  height: 120px;
 }
 
 textarea::placeholder {
